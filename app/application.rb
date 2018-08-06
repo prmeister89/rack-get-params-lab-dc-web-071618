@@ -39,7 +39,7 @@ class Application
         @@cart << x
         return "#{x} has been added to your cart"
       else
-        resp.write "ERROR"
+        return "ERROR"
       end
     end
   end
