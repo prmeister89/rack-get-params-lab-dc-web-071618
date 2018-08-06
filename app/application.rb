@@ -35,12 +35,10 @@ class Application
 
   def add_to_cart(x)
     if @@cart.include?(x) == true
-      if true
-        @@cart << x
-        return "#{x} has been added to your cart"
-      else
-        return "ERROR"
-      end
+      @@cart << x
+      return "#{x} has been added to your cart"
+    else
+      return "ERROR"
     end
   end
   
