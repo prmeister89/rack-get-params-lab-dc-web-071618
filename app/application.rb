@@ -34,7 +34,7 @@ class Application
   end
 
   def add_to_cart(x)
-    if @@cart.include?(x)
+    if @@cart.include?(x) == true
       if true
         @@cart << x
         return "#{x} has been added to your cart"
