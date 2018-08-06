@@ -37,6 +37,7 @@ class Application
     if @@cart.include?(x)
       if true
         @@cart << x
+        return "#{x} has been added to your cart"
       else
         resp.write "ERROR"
       end
