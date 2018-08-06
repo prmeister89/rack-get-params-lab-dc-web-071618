@@ -21,7 +21,7 @@ class Application
         end
       end
     elsif req.path.match(/add/)
-      x = req.params["item"]
+      x = req.params[item]
       resp.write add_to_cart(x)
     elsif req.path.match(/search/)
       search_term = req.params["q"]
