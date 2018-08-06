@@ -38,7 +38,7 @@ class Application
       @@cart << x
       return "added #{x}"
     else
-      return "ERROR"
+      return "We don't have that item"
     end
   end
   
